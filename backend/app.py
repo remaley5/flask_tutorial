@@ -5,7 +5,7 @@ from datetime import datetime
 
 # Tells flask where app is running
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@localhost/net_tutorial'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://net_tutorial_app:password@localhost/net_tutorial'
 db = SQLAlchemy(app)
 app.app_context().push()
 
